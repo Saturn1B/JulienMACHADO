@@ -340,6 +340,38 @@
 
           <!-- ========== End Project Area ========== -->
 
+          <!-- ========== Start Test Area ========== -->
+
+            <h1>Scoreboard</h1>
+            <table>
+              <thead>
+                <tr>
+                  <th>Player Name</th>
+                  <th>Score</th>
+                </tr>
+              </thead>
+              <tbody id="scoreboard"></tbody>
+            </table>
+          
+            <script>
+              fetch('/api/top-scores')
+                .then((response) => response.json())
+                .then((data) => {
+                  const scoreboard = document.getElementById('scoreboard');
+                  data.forEach((row) => {
+                    const rowElement = document.createElement('tr');
+                    rowElement.innerHTML = `
+                      <td>${row.playerName}</td>
+                      <td>${row.score}</td>
+                    `;
+                    scoreboard.appendChild(rowElement);
+                  });
+                })
+                .catch((error) => console.error('Error fetching data:', error));
+            </script>
+
+          <!-- ========== End Test Area ========== -->
+
         </main>
 
         <footer class="footer-area">
