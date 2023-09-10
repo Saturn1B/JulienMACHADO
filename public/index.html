@@ -60,6 +60,9 @@
                           <li class="nav-item">
                             <a class="nav-link" href="#project">[projets]</a>
                           </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#test">[scoreboard]</a>
+                          </li>
                         </ul>
                       </div>
                     </div>
@@ -214,7 +217,7 @@
           <!-- ========== Start Project Area ========== -->
 
             <section id="project" class="project-area">
-              <div class="container ">
+              <div class="container">
                 <div class="project-title pb-5">
                   <h1 class="title-h1 text-part">[Mes projets]</h1>
                 </div>
@@ -342,33 +345,39 @@
 
           <!-- ========== Start Test Area ========== -->
 
-            <h1>Scoreboard</h1>
-            <table>
-              <thead>
-                <tr>
-                  <th>Player Name</th>
-                  <th>Score</th>
-                </tr>
-              </thead>
-              <tbody id="scoreboard"></tbody>
-            </table>
+          <section id="test" class="test-area">
+            <div class="container">
+              <h2 class="text-part">
+                <span>[Scoreboard]</span>
+              </h2>
+              <table>
+                <thead>
+                  <tr>
+                    <th class="text-secondary text-white">Player Name</th>
+                    <th class="text-secondary text-white">Score</th>
+                  </tr>
+                </thead>
+                <tbody id="scoreboard"></tbody>
+              </table>
           
-            <script>
-              fetch('/api/top-scores')
-                .then((response) => response.json())
-                .then((data) => {
-                  const scoreboard = document.getElementById('scoreboard');
-                  data.forEach((row) => {
-                    const rowElement = document.createElement('tr');
-                    rowElement.innerHTML = `
-                      <td>${row.playerName}</td>
-                      <td>${row.score}</td>
-                    `;
-                    scoreboard.appendChild(rowElement);
-                  });
-                })
-                .catch((error) => console.error('Error fetching data:', error));
-            </script>
+              <script>
+                fetch('/api/top-scores')
+                  .then((response) => response.json())
+                  .then((data) => {
+                    const scoreboard = document.getElementById('scoreboard');
+                    data.forEach((row) => {
+                      const rowElement = document.createElement('tr');
+                      rowElement.innerHTML = `
+                        <td>${row.playerName}</td>
+                        <td>${row.score}</td>
+                      `;
+                      scoreboard.appendChild(rowElement);
+                    });
+                  })
+                  .catch((error) => console.error('Error fetching data:', error));
+              </script>
+            </div>
+          </section>
 
           <!-- ========== End Test Area ========== -->
 

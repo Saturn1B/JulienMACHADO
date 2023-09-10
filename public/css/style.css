@@ -264,6 +264,26 @@ html{
 
 /*End Project Area*/
 
+/*Start Test Area*/
+
+.site-main .test-area{
+    margin: 200px -15px;
+    margin-left: 20rem;
+    margin-right: 20rem;
+    font-family: var(--roboto);
+}
+
+.site-main .test-area h2 > span{
+    display: block;
+    font: normal 400 44px/62px var(--roboto);
+}
+
+.site-main .test-area .text-white{
+    font: normal 400 20px/62px var(--roboto);
+}
+
+/*End Test Area*/
+
 /*Start Client Area*/
 
 .site-main .client-area .client-title p{
