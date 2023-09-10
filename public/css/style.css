@@ -284,10 +284,8 @@ html{
 }
 
 .site-main .test-area .text-row{
-    font: normal 400 16px/62px var(--roboto);
+    font: normal 400 16px/32px var(--roboto);
     padding-right: 10rem;
-    padding-top: -4rem;
-    padding-bottom: -4rem;
 }
 
 /*End Test Area*/
