@@ -286,6 +286,8 @@ html{
 .site-main .test-area .text-row{
     font: normal 400 16px/62px var(--roboto);
     padding-right: 10rem;
+    margin-top: -2rem;
+    margin-bottom: -2rem;
 }
 
 /*End Test Area*/
