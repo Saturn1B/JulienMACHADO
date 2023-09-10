@@ -280,6 +280,12 @@ html{
 
 .site-main .test-area .text-white{
     font: normal 400 20px/62px var(--roboto);
+    padding-right: 10rem;
+}
+
+.site-main .test-area .text-row{
+    font: normal 400 16px/62px var(--roboto);
+    padding-right: 10rem;
 }
 
 /*End Test Area*/

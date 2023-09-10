@@ -368,8 +368,8 @@
                     data.forEach((row) => {
                       const rowElement = document.createElement('tr');
                       rowElement.innerHTML = `
-                        <td class="text-secondary text-white">${row.playerName}</td>
-                        <td class="text-secondary text-white">${row.score}</td>
+                        <td class="text-secondary text-row">${row.playerName}</td>
+                        <td class="text-secondary text-row">${row.score}</td>
                       `;
                       scoreboard.appendChild(rowElement);
                     });
