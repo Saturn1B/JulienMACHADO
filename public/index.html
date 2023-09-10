@@ -61,7 +61,7 @@
                             <a class="nav-link" href="#project">[projets]</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" href="#test">[scoreboard]</a>
+                            <a class="nav-link" href="#test">[satellite dodge]</a>
                           </li>
                         </ul>
                       </div>
@@ -348,21 +348,24 @@
           <section id="test" class="test-area">
             <div class="container">
               <h2 class="text-part">
-                <span>[Scoreboard]</span>
+                <span>[Satelitte Dodge]</span>
               </h2>
+              <iframe src="./SatelitteDodge/index.html" width="1000" height="650"></iframe>
+              <div class="scoreboard">
+                <h3 class="text-part">
+                  <span>Scoreboard</span>
+                </h3>
+                <table>
+                  <thead>
+                    <tr>
+                      <th class="text-secondary text-white">Player Name</th>
+                      <th class="text-secondary text-white">Score</th>
+                    </tr>
+                  </thead>
+                  <tbody id="scoreboard"></tbody>
+                </table>
+              </div>
 
-              <iframe src="./SatelitteDodge/index.html" width="800" height="450"></iframe>
-
-              <table>
-                <thead>
-                  <tr>
-                    <th class="text-secondary text-white">Player Name</th>
-                    <th class="text-secondary text-white">Score</th>
-                  </tr>
-                </thead>
-                <tbody id="scoreboard"></tbody>
-              </table>
-          
               <script>
                 fetch('/api/top-scores')
                   .then((response) => response.json())

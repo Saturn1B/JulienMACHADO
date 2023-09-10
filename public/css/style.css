@@ -278,6 +278,11 @@ html{
     font: normal 400 44px/62px var(--roboto);
 }
 
+.site-main .test-area h3 > span{
+    display: block;
+    font: normal 800 32px/62px var(--roboto);
+}
+
 .site-main .test-area .text-white{
     font: normal 400 20px/62px var(--roboto);
     padding-right: 10rem;
@@ -288,6 +293,13 @@ html{
     padding-right: 10rem;
 }
 
+.site-main .test-area .scoreboard{
+    margin: 0rem 1rem;
+    padding: 0rem 1rem;
+    background-color: #000;
+    border-radius: 10px;
+    width: 600px;
+}
 /*End Test Area*/
 
 /*Start Client Area*/
