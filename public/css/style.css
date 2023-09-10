@@ -197,7 +197,7 @@ html{
 /*Start Project Area*/
 
 .site-main .project-area{
-    margin: 200px -15px;
+    margin: 200px -15px 0px -15px;
     font-family: var(--roboto);
 }
 
@@ -267,7 +267,7 @@ html{
 /*Start Test Area*/
 
 .site-main .test-area{
-    margin: 200px -15px;
+    margin: 100px -15px;
     margin-left: 20rem;
     margin-right: 20rem;
     font-family: var(--roboto);
