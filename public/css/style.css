@@ -13,6 +13,8 @@
 .header_area{
     box-shadow: var(--box-shadow);
     background: #131313;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .header_area .main-menu .navbar .container-fluid{
