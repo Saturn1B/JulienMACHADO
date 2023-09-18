@@ -74,7 +74,82 @@
 
     .site-main .brand-area,
     .site-main .services-area .services-title,
-    .site-main .about-area{
+    .site-main .about-area
+    .site-main .test-area{
         padding: 3% 4%;
+    }
+}
+
+/*if the viewport is equal or less than 1642*/
+@media only screen and (max-width: 1642px){
+    .header_area{
+        box-shadow: var(--box-shadow);
+        background: #131313;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+
+    .header_area .main-menu .navbar .container-fluid{
+        margin-top: -12px;
+        margin-bottom: -28px;
+    }
+
+    .header_area .main-menu .navbar .navbar-logo{
+        width: 125px;
+        height: 125px;
+    }
+
+    .header_area .main-menu .navbar .navbar-logo .navbar-title{
+        font: normal 500 40px var(--roboto);
+        transform: translateX(-11.5px) translateY(36px);
+    }
+
+    .header_area .main-menu .nav-item .nav-link{
+        font: normal 500 15px/2px var(--roboto);
+        text-transform: uppercase;
+        padding: 1.3rem;
+        color: var(--part-color);
+    }
+}
+
+/*if the viewport is equal or less than 1460*/
+@media only screen and (max-width: 1460px){
+    .header_area{
+        box-shadow: var(--box-shadow);
+        background: #131313;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .header_area .main-menu .navbar .container-fluid{
+        margin-top: -15px;
+        margin-bottom: -35px;
+    }
+
+    .header_area .main-menu .navbar .navbar-logo{
+        width: 120px;
+        height: 120px;
+    }
+
+    .header_area .main-menu .navbar .navbar-logo .navbar-title{
+        font: normal 500 35px var(--roboto);
+        transform: translateX(-11.5px) translateY(36px);
+    }
+
+    .header_area .main-menu .nav-item .nav-link{
+        font: normal 500 12px/2px var(--roboto);
+        text-transform: uppercase;
+        padding: 1rem;
+        color: var(--part-color);
+    }
+
+    .header_area .main-menu .navbar .navbar-logo .navbar-title{
+        font: normal 500 40px var(--roboto);
+        transform: translateX(-11.5px) translateY(36px);
+    }
+
+    .header_area .main-menu .navbar .navbar-text .para{
+        font: normal 400 23px/28px var(--roboto);
+        color: #ac5c00;
     }
 }

@@ -290,12 +290,10 @@ html{
 
 .site-main .test-area{
     margin: 100px -15px;
-    margin-left: 20rem;
-    margin-right: 20rem;
-    font-family: var(--roboto);
 }
 
 .site-main .test-area h2 > span{
+    padding: 0rem 2rem;
     display: block;
     font: normal 400 44px/62px var(--roboto);
 }
@@ -315,8 +313,12 @@ html{
     padding-right: 10rem;
 }
 
+.site-main .test-area .test-game{
+    margin: 0rem 3rem;
+}
+
 .site-main .test-area .scoreboard{
-    margin: 0rem 1rem;
+    margin: 0rem 4.2rem;
     padding: 0rem 1rem;
     background-color: #000;
     border-radius: 10px;
