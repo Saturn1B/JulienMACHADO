@@ -214,12 +214,16 @@ html{
     transform: scale(1.05);
 }
 
+.site-main .services-list{
+    margin-top: 50px;
+}
+
 /*End Services Area*/
 
 /*Start Project Area*/
 
 .site-main .project-area{
-    margin: 200px -15px 0px -15px;
+    margin: 100px 0px;
     font-family: var(--roboto);
 }
 
@@ -274,6 +278,8 @@ html{
 .site-main .project-area .grid .our-project{
     margin-left: -6rem; margin-right:  -6rem;
     transition: .7s ease;
+    text-align: center;
+
 }
 
 .site-main .project-area .grid .our-project:hover{
@@ -282,6 +288,10 @@ html{
 
 .site-main .project-area .grid .our-project .img a:hover img{
     filter: brightness(1.1) drop-shadow(1px 8px 30px #000000);
+}
+
+.site-main .project-area .grid .our-project .img img{
+    border-radius: 20px;
 }
 
 /*End Project Area*/
